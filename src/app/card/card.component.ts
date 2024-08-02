@@ -4,7 +4,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'app-card',
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss',
-  encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.Emulated, // Quando nao e declarado o encapsulamento ele e setado por padrao
+  //encapsulation: ViewEncapsulation.None,
 })
 export class CardComponent {
   plano = {
